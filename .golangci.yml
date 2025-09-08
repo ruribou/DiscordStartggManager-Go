@@ -6,8 +6,6 @@ linters:
     - errcheck       # エラーハンドリングチェック
     - staticcheck    # 静的解析
     - unused         # 使用されない変数/関数検出
-    - gosimple       # シンプルな書き方の提案
-    - varcheck       # 未使用変数検出
     - misspell       # スペルミス検出
     - lll            # 行の長さチェック
     - paralleltest   # 並列テストチェック
