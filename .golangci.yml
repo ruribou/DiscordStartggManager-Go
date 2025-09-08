@@ -1,5 +1,7 @@
-linters:
-  disable-all: true
+version: "2"
+
+formatters:
+  default: none
   enable:
     - govet          # 潜在的なバグ検出
     - errcheck       # エラーハンドリングチェック
