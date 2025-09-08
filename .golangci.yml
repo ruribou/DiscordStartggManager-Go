@@ -10,8 +10,11 @@ linters:
     - varcheck
     - misspell
     - lll
-    - gofumpt
     - paralleltest
+
+formatters:
+  enable:
+    - gofumpt
 
 run:
   timeout: 2m
