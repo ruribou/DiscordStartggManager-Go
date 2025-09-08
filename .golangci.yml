@@ -1,0 +1,18 @@
+version: "2"
+
+linters:
+  enable:
+    - govet          # 潜在的なバグ検出
+    - errcheck       # エラーハンドリングチェック
+    - staticcheck    # 静的解析
+    - unused         # 使用されない変数/関数検出
+    - misspell       # スペルミス検出
+    - lll            # 行の長さチェック
+    - paralleltest   # 並列テストチェック
+
+formatters:
+  enable:
+    - gofumpt        # より厳密なフォーマット
+
+run:
+  timeout: 2m # タイムアウトを設定 (2分)
