@@ -1,0 +1,11 @@
+services:
+  discord-startgg-manager-go:
+    container_name: discord-startgg-manager-go
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+    env_file:
+      - .env
