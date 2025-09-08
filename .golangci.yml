@@ -1,4 +1,4 @@
-version: "1"
+version: "2"
 
 linters:
   enable:
@@ -10,8 +10,11 @@ linters:
     - varcheck       # 未使用変数検出
     - misspell       # スペルミス検出
     - lll            # 行の長さチェック
-    - gofumpt        # より厳密なフォーマット
     - paralleltest   # 並列テストチェック
+
+formatters:
+  enable:
+    - gofumpt        # より厳密なフォーマット
 
 run:
   timeout: 2m # タイムアウトを設定 (2分)
